@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>AxelCraft - Strona Główna</title>
+   <link rel="stylesheet" href="./components/global-styles/global-style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <!-- Nawigacja -->
+   <header>
+      <div class="header-container">
+         <div class="header-logo"><img src="#"><a href="home.html">AxelCraft.pl</a></div>
+         <nav class="header-nav">
+            <ul class="header-nav-list">
+               <li><a href="home.html" class="header-nav-link header-nav-active">Strona główna</a></li>
+               <li><a href="#" class="header-nav-link">Forum</a></li>
+               <li><a href="#" class="header-nav-link">Kontakt</a></li>
+               <li><a href="#" class="header-nav-link">Reklamacje</a></li>
+               <button class="open-modal-btn">Voucher</button>
+            </ul>
+         </nav>
+         <button class="header-nav-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+   </header>
+
+   <!-- Voucher -->
+
+   <div class="voucher-modal">
+      <div class="voucher-modal__wrapper">
+         <div class="voucher-modal__content">
+            <span class="close-modal-btn">&times;</span>
+            <h2 class="voucher-modal__header">Voucher</h2>
+            <div class="voucher-modal__inputs">
+               <input class="voucher-modal__input" type="text" dir="ltr" id="nick" name="nick" placeholder="Podaj nick" required>
+               <input class="voucher-modal__input" type="text" dir="ltr" id="voucher-code" name="voucher-code" placeholder="Wprowadź kod vouchera" required>
+            </div>
+            <div class="voucher-modal__actions">
+               <label class="voucher-modal__label" for="agree">Akceptuję regulamin płatności.
+                  <input type="checkbox" class="voucher-modal__checkbox" id="agree" required>
+                  <span class="checkmark-voucher"></span>
+               </label>
+               <button class="voucher-modal__button" type="button">Zrealizuj</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="voucher-modal__success">
+      <div class="mini-modal-content">
+         <h1>Pomyślnie wykorzystano voucher!</h1>
+         <p>Zakupione przedmioty odbierzesz na serwerze komendą <span>/odbierz</span></p>
+         <button class="mini-close-button">Wróć do sklepu</button>
+      </div>
+   </div>
+
+   <div class="voucher-modal__failed">
+      <div class="mini-modal-content">
+         <h1>Voucher jest błędny lub został już wykorzystany!</h1>
+         <button class="mini-close-button">Wróć do sklepu</button>
+      </div>
+   </div>
+
+   <!-- Sekcja z grafiką -->
+   <div class="graphic-section"><div class="copy-ip" title="Kliknij, aby skopiować IP serwera"></div></div>
+
+   <!-- Główny kontener -->
+   <!-- (flex-item - pojedyńczy item z trybem) -->
+   <div class="wrapper">
+      <div class="flex-container">
+         <div class="flex-item">
+            <div class="item-container">
+               <div class="main-square"><img src="#"></div>
+               <div class="small-square">
+                  <p class="title">OneBlock</p>
+                  <p class="paragraph">Oferty: 50</p>
+               </div>
+               <a href="itemshop.html?category=oneblock"><button id="oneblock-button">Wybierz</button></a>
+            </div>
+         </div>
+         <div class="flex-item">
+            <div class="item-container">
+               <div class="main-square"><img src="#"></div>
+               <div class="small-square">
+                  <p class="title">BoxPvP</p>
+                  <p class="paragraph">Oferty: 50</p>
+               </div>
+               <a href="itemshop.html?category=boxpvp"><button id="boxpvp-button">Wybierz</button></a>
+            </div>
+         </div>
+         <div class="flex-item">
+            <div class="item-container">
+               <div class="main-square"><img src="#"></div>
+               <div class="small-square">
+                  <p class="title">Inny serwer</p>
+                  <p class="paragraph">Oferty: 50</p>
+               </div>
+               <button>Wybierz</button>
+            </div>
+         </div>
+
+         <div class="buyer-container">
+
+            <!-- Kupujący miesiąca -->
+            <div class="buyer-of-the-month">
+               <div class="month-label">
+                  <p>Kupujący miesiąca</p>
+               </div>
+               <div class="avatar-circle-container">
+                  <div class="avatar-circle">
+                     <img src="https://mc-heads.net/avatar/Hugoo/100" alt="Avatar" title="Nick">
+                  </div>
+               </div>
+               <div class="nickname">Marcinekk</div>
+               <div class="package-count">1000 pakietów</div>
+            </div>
+
+            <!-- Ostatni kupujący -->
+
+            <div class="last-buyer">
+               <div class="last-buyer-label">
+                  <p>Ostatni kupujący</p>
+               </div>
+               <div class="square-container">
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+                  <div class="square"><img src="https://mc-heads.net/avatar/Hugoo/100" title="Nick"></div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Stopka strony -->
+
+         <footer>
+            <div class="footer-container">
+               <div class="footer-element social-media">
+                  <h3>Social Media</h3>
+                  <ul>
+                     <li><a href="#">Facebook</a></li>
+                     <li><a href="#">Twitter</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">Discord</a></li>
+                     <li><a href="#">YouTube</a></li>
+                  </ul>
+               </div>
+               <div class="footer-element useful-links">
+                  <h3>Przydatne Linki</h3>
+                  <ul>
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="#">Kontakt</a></li>
+                     <li><a href="#">Regulamin</a></li>
+                     <li><a href="#">Forum</a></li>
+                     <li><a href="#">Reklamacje</a></li>
+                  </ul>
+               </div>
+               <div class="footer-element cashbill-logo">
+                  <h3>Operator płatności</h3>
+                  <p>Operatorem płatności jest CashBill.</p>
+                  <a href="https://www.cashbill.pl/"><img src="./assets/images/cashbill.png"></a>
+               </div>
+            </div>
+            <div class="footer-copyright">
+               <p>Copyright &copy; 2023 AxelCraft.pl</p>
+            </div>
+         </footer>
+         
+      </div>
+   </div>
+
+   <!-- JS -->
+   <script>
+      const targetElement = "AxelCraft.pl";
+    
+    document.querySelector('.copy-ip').addEventListener('click', function() {
+      navigator.clipboard.writeText(targetElement).then(function() {
+        let dymek = document.createElement('div');
+        dymek.textContent = 'Skopiowano IP serwera!';
+        dymek.style.cssText = `position: fixed;
+                               bottom: 20px;
+                               right: 20px;
+                               background-color: #333;
+                               color: #fff;
+                               padding: 10px;
+                               border-radius: 5px;
+                               z-index: 9999;`;
+        document.body.appendChild(dymek);
+        setTimeout(function () {
+          document.body.removeChild(dymek);
+        }, 3000);
+      });
+    });
+   </script>
+   <script src="./components/navigation/navigation.js"></script>
+   <script src="./components/modal/voucher-modal/voucher.js"></script>
+</body>
+
+</html>

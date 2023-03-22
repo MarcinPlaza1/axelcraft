@@ -1,0 +1,97 @@
+@import url(../categories/categories-style.css);
+@import url(../footer/footer-style.css);
+@import url(../header/graphic-section.css);
+@import url(../item-card/item-card-style.css);
+@import url(../modal/purchase-modal/modal-style.css);
+@import url(../modal/voucher-modal/voucher.css);
+@import url(../navigation/navigation-style.css);
+@import url(../products/products-style.css);
+@import url(../search/search-style.css);
+@import url(responsive.css);
+@import url(fonts.css);
+
+:root {
+    /* Kolor czcionek */
+    --light: #0ec6d6;
+    --dark-font: #035f68;
+    --white-font: #FFFFFF;
+
+    /* Kolor tła */
+    --background: #D9EBF5;
+    --normal-background: #9added;
+    --dark-background: #00a2b1;
+    --orange-background: #e8ac42;
+
+    /* Wielkość czcionek */
+    --xs-font: 14px;
+    --s-font: 15px;
+    --normal-font: 16px;
+    --big-font: 18px;
+    --l-font: 20px;
+    --xl-font: 24px;
+    --xxl-font: 30px;
+    --bold-font: bold;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white-font);
+    border: none;
+    cursor: pointer;
+    font-size: var(--l-font);
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    background-image: url(./../../assets/images/axel_grafika_stopka.webp);
+    background-position: bottom center;
+	background-repeat: no-repeat;
+    z-index: -999999;
+}
+
+.reklamacje {
+    width: 50%;
+}
+
+.reklamacje p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.no-products {
+    height: 300px;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(211, 211, 211, 0.877);
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+}

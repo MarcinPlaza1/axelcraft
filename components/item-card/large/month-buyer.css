@@ -1,0 +1,87 @@
+.buyer-of-the-month {
+	width: 520px;
+	height: 200px;
+	background-color: var(--dark-background);
+	padding: 30px;
+	position: relative;
+	border-radius: 15px;
+	margin: 120px 30px 0 30px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-circle-container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	left: 1.5rem;
+}
+
+.avatar-circle {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	background-color: var(--background);
+	overflow: hidden;
+	position: relative;
+}
+
+.avatar-circle img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.nickname {
+	font-size: var(--l-font);
+	font-weight: var(--bold-font);
+	color: var(--white-font);
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 200px;
+}
+
+.package-count {
+	width: 354px;
+	height: 35px;
+	background-color: var(--light);
+	border-radius: 10px;
+	font-size: var(--normal-font);
+	font-weight: var(--bold-font);
+	color: var(--white-font);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 30px;
+	right: 90px;
+	z-index: 0;
+}
+
+.month-label {
+	width: 300px;
+	height: 70px;
+	background-color: var(--light);
+	position: absolute;
+	top: -20px;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.month-label p {
+	line-height: 60px;
+	margin: 0;
+	vertical-align: middle;
+	color: white;
+	font-size: var(--xl-font);;
+}

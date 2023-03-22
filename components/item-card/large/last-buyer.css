@@ -1,0 +1,47 @@
+.last-buyer {
+	width: 520px;
+	height: 200px;
+	background-color: var(--dark-background);
+	position: relative;
+	border-radius: 15px;
+	margin: 120px 30px 0 30px;
+    padding: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.last-buyer-label {
+	width: 300px;
+	height: 70px;
+	background-color: var(--light);
+	position: absolute;
+	top: -20px;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.last-buyer-label p {
+	line-height: 60px;
+	margin: 0;
+	vertical-align: middle;
+	color: white;
+	font-size: var(--xl-font);;
+}
+
+.square-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.square img{
+	width: 67px;
+	height: 67px;
+	margin: 5px;
+}

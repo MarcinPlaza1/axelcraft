@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>AxelCraft - Strona Główna</title>
+   <link rel="stylesheet" href="./components/global-styles/global-style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <!-- Nawigacja -->
+   <header>
+      <div class="header-container">
+         <div class="header-logo"><img src="#"><a href="home.html">AxelCraft.pl</a></div>
+         <nav class="header-nav">
+            <ul class="header-nav-list">
+               <li><a href="home.html" class="header-nav-link header-nav-active">Strona główna</a></li>
+               <li><a href="#" class="header-nav-link">Forum</a></li>
+               <li><a href="#" class="header-nav-link">Kontakt</a></li>
+               <li><a href="#" class="header-nav-link">Reklamacje</a></li>
+               <button class="open-modal-btn">Voucher</button>
+            </ul>
+         </nav>
+         <button class="header-nav-toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+   </header>
+
+   <!-- Voucher -->
+
+   <div class="voucher-modal">
+      <div class="voucher-modal__wrapper">
+         <div class="voucher-modal__content">
+            <span class="close-modal-btn">&times;</span>
+            <h2 class="voucher-modal__header">Voucher</h2>
+            <div class="voucher-modal__inputs">
+               <input class="voucher-modal__input" type="text" dir="ltr" id="nick" name="nick" placeholder="Podaj nick" required>
+               <input class="voucher-modal__input" type="text" dir="ltr" id="voucher-code" name="voucher-code" placeholder="Wprowadź kod vouchera" required>
+            </div>
+            <div class="voucher-modal__actions">
+               <label class="voucher-modal__label" for="agree">Akceptuję regulamin płatności.
+                  <input type="checkbox" class="voucher-modal__checkbox" id="agree" required>
+                  <span class="checkmark-voucher"></span>
+               </label>
+               <button class="voucher-modal__button" type="button">Zrealizuj</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="voucher-modal__success">
+      <div class="mini-modal-content">
+         <h1>Pomyślnie wykorzystano voucher!</h1>
+         <p>Zakupione przedmioty odbierzesz na serwerze komendą <span>/odbierz</span></p>
+         <button class="mini-close-button">Wróć do sklepu</button>
+      </div>
+   </div>
+
+   <div class="voucher-modal__failed">
+      <div class="mini-modal-content">
+         <h1>Voucher jest błędny lub został już wykorzystany!</h1>
+         <button class="mini-close-button">Wróć do sklepu</button>
+      </div>
+   </div>
+
+   <!-- Sekcja z grafiką -->
+   <div class="graphic-section"><div class="copy-ip" title="Kliknij, aby skopiować IP serwera"></div></div>
+
+   <!-- Główny kontener -->
+   <!-- (flex-item - pojedyńczy item z trybem) -->
+   <div class="wrapper">
+      <div class="flex-container">
+         
+        <div class="reklamacje">
+            <p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        </div>
+
+         <!-- Stopka strony -->
+
+         <footer>
+            <div class="footer-container">
+               <div class="footer-element social-media">
+                  <h3>Social Media</h3>
+                  <ul>
+                     <li><a href="#">Facebook</a></li>
+                     <li><a href="#">Twitter</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">Discord</a></li>
+                     <li><a href="#">YouTube</a></li>
+                  </ul>
+               </div>
+               <div class="footer-element useful-links">
+                  <h3>Przydatne Linki</h3>
+                  <ul>
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="#">Kontakt</a></li>
+                     <li><a href="#">Regulamin</a></li>
+                     <li><a href="#">Forum</a></li>
+                     <li><a href="#">Reklamacje</a></li>
+                  </ul>
+               </div>
+               <div class="footer-element cashbill-logo">
+                  <h3>Operator płatności</h3>
+                  <p>Operatorem płatności jest CashBill.</p>
+                  <a href="https://www.cashbill.pl/"><img src="./assets/images/cashbill.png"></a>
+               </div>
+            </div>
+            <div class="footer-copyright">
+               <p>Copyright &copy; 2023 AxelCraft.pl</p>
+            </div>
+         </footer>
+         
+      </div>
+   </div>
+
+   <!-- JS -->
+   <script>
+      const targetElement = "AxelCraft.pl";
+    
+    document.querySelector('.copy-ip').addEventListener('click', function() {
+      navigator.clipboard.writeText(targetElement).then(function() {
+        let dymek = document.createElement('div');
+        dymek.textContent = 'Skopiowano IP serwera!';
+        dymek.style.cssText = `position: fixed;
+                               bottom: 20px;
+                               right: 20px;
+                               background-color: #333;
+                               color: #fff;
+                               padding: 10px;
+                               border-radius: 5px;
+                               z-index: 9999;`;
+        document.body.appendChild(dymek);
+        setTimeout(function () {
+          document.body.removeChild(dymek);
+        }, 3000);
+      });
+    });
+   </script>
+   <script src="./components/navigation/navigation.js"></script>
+   <script src="./components/modal/voucher-modal/voucher.js"></script>
+</body>
+
+</html>

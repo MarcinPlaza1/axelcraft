@@ -1,0 +1,52 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--white-font);
+	width: 70%;
+	margin: 1rem auto;
+  }
+  
+  .footer-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 2rem;
+  }
+  
+  .footer-element {
+	width: 30%;
+  }
+  
+  .cashbill-logo {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+  }
+  
+  .cashbill-logo img {
+	margin: 0 30px;
+  }
+  
+  .footer-element ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 1rem;
+  }
+  
+  .footer-element a {
+	color: var(--white-font);
+  }
+  
+  .footer-element h3, .footer-element p {
+	text-align: left;
+  }
+  
+  .footer-copyright {
+	margin-top: 2rem;
+	text-align: center;
+	color: lightgray
+  }
+  
+
